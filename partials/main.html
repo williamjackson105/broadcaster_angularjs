@@ -1,0 +1,29 @@
+<!--
+Purpose:
+	This is main page.
+	It includes several partial html pages.
+
+	Controller :  MainController
+
+
+-->
+
+<div class='main leftside'>
+		
+	<div id='video' ng-include='video'></div>
+
+	<button class="btn" ng-click="open()" style='width:100%;'>Start My Show</button>
+
+	<div id='privmess' ng-include="dirctmessage"></div>
+	
+</div>
+
+<div class='main center' ng-include="roommessage"></div>
+<img src={{sheet}} />
+
+<div class='main allpic'>
+	<div ng-repeat="member in members" class='pic'>
+		<li>{{member.memberUri}}</li>
+		<li>{{member.avatarUri}}</li>
+	</div>
+</div>

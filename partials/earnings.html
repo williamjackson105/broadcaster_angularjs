@@ -1,0 +1,109 @@
+<!--
+Purpose:
+  When clicking "Earning" button, it displays this html in modal dialog.
+
+-->
+
+<!--div class="modal-header">	
+</div-->
+<div class="modal-body">
+	<div class='earn-today earn'>
+		<h1>Today</h1>
+		<div class='earn-box'>
+			<p>LOGGED IN TIME</p>
+			<span ng-bind="today.hours"></span>
+			HOURS
+		</div>
+		<div class='earn-box'>
+			<p>LONGEST PRIVATE CHAT</p>
+			<span ng-bind="today.minutes"></span> 
+			MINUTES
+		</div>
+		<div class='earn-box'>
+			<p>VIDEO SUBMISSIONS</p>
+			<span ng-bind="today.videos"></span>  
+			TOTAL 
+		</div>
+		<div class='earn-box'>
+			<p>AVG PRIVATE MINS/HR</p>
+			<span ng-bind="today.avg"></span>  
+			MINUTES
+		</div>
+	</div>
+	<div class='earn-week earn'>
+		<h1>This Week</h1>
+		<div class='earn-box'>
+			<p>LOGGED IN TIME</p>
+			<span ng-bind="week.hours"></span>  
+			HOURS
+		</div>
+		<div class='earn-box'>
+			<p>LONGEST PRIVATE CHAT</p>
+			<span ng-bind="week.minutes"></span>  
+			MINUTES
+		</div>
+		<div class='earn-box'>
+			<p>VIDEO SUBMISSIONS</p>
+			<span ng-bind="week.videos"></span>  
+			TOTAL 
+		</div>
+		<div class='earn-box'>
+			<p>AVG PRIVATE MINS/HR</p>
+			<span ng-bind="week.avg"></span>  
+			MINUTES
+		</div>
+	</div>
+</div>
+<!--div class="modal-footer">
+</div-->
+
+<style>
+	.modal {
+		width:70% !important;
+		left:10% !important;
+	}	
+
+	.modal-content {
+		background-color: #3a3a3a;
+		border: 1px solid white;
+	}
+
+	.earn {
+		width:49%;
+		float:left;
+		text-align:center;
+	}
+
+	.earn h1 {
+		color: #16c2ff;
+	}
+
+	.earn-box {
+		width:48%;
+		margin:5px 0 5px 5px;
+		float:left;
+		height:80px;
+		text-align:center;
+		border:1px solid black;
+		font-size:20px;
+		background-color: #282828;
+		color: #898989;
+		border-radius: 6px;
+	}
+
+	.earn-box span {
+		color: white;
+	}
+
+	.earn-box p {
+		color: #186c90;
+		background-color: #1e1e1e;
+		font-size: 14px;
+		font-weight: bold;
+		border-radius: 6px;
+	}
+
+	.modal-header, .modal-footer {
+		display: none;
+	}
+</style>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<title>CamFly</title>
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="css/angular-slider.min.css" media="all">
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<link rel="stylesheet" href="css/site.css" />
+	
+		<script type="text/javascript" src="js/lib/jquery/jquery.js"></script>
+		<script type="text/javascript" src="js/lib/jquery/jquery-ui.js"></script>
+
+		<script src="js/lib/custom.modernizr.js"></script>
+	</head>
+
+	<body ng-controller='AppCtrl' >
+		
+		<div class="header" ng-include='topnav'></div>
+
+		<div class="mainarea" ng-view>
+		</div>					
+	</body>
+
+	<!-- Libraries -->
+	<script src="js/lib/angular/angular.min.js"></script>
+	<script src="js/lib/angular/angular-slider.min.js"></script>
+	<script src="js/lib/angular/angular-animate.min.js"></script>	
+	<script src="js/lib/angular/angular-route.min.js"></script>
+	
+	<!-- MVC files -->
+	<script src="js/app.js"></script>
+
+		<!--- Service files -->
+		<script src="js/service/createdialog.js"></script>
+		<script src="js/service/socket-io.js"></script>		
+		<script src="js/service/incomingsv.js"></script>
+		<script src="js/service/outcomingsv.js"></script>		
+	
+		<!-- Controller files -->
+		<script src="js/controller/AppCtrl.js"></script>
+		<script src="js/controller/EarnCtrl.js"></script>
+		<script src="js/controller/MainCtrl.js"></script>
+		<script src="js/controller/SettingCtrl.js"></script>
+		<script src="js/controller/TipsCtrl.js"></script>
+		<script src="js/controller/AdminMessageCtrl.js"></script>
+		<script src="js/controller/FreeChatCtrl.js"></script>
+		<script src="js/controller/DirectChatCtrl.js"></script>
+				
+	<script src="js/filters.js"></script>
+	<script src="js/directives.js"></script>
+	
+</html>

@@ -1,0 +1,109 @@
+<!--
+Purpose:
+  When clicking "Setting" button, it displays this html in modal dialog.
+
+-->
+
+<!--div class="modal-header">	
+</div-->
+<div class="modal-body">
+	
+	<div class='itembar'>
+		<div class='caption'>Brightness </div>		
+		<p class='startvalue'>0%</p>
+		<p class='endvalue'>100%</p>
+		<slider floor="0" ceiling="100" step="1" precision="2" ng-model="config.brightness"></slider>
+ 
+	</div>
+	<div class='itembar'>
+		<div class='caption'>Contrast</div>		
+		<p class='startvalue'>0%</p>
+		<p class='endvalue'>100%</p>
+		<slider floor="0" ceiling="100" step="1" precision="2" ng-model="config.contrast"></slider>
+	</div>
+	<div class='itembar'>
+		<div class='caption'>Hue</div>
+		<p class='startvalue'>0%</p>
+		<p class='endvalue'>100%</p>
+		<slider floor="0" ceiling="100" step="1" precision="2" ng-model="config.hue"></slider>
+	</div>
+	<div class='itembar'>
+		<div class='caption'>Saturation</div>	
+		<p class='startvalue'>0%</p>
+		<p class='endvalue'>100%</p>
+		<slider floor="0" ceiling="100" step="1" precision="2" ng-model="config.saturation"></slider>
+	</div>
+	<div class='itembar'>
+		<div class='caption'>Font Size</div>				
+		<p class='startvalue'>Small</p>
+		<p class='middlevalue'>Medium</p>
+		<p class='endvalue'>Large</p>	
+		<slider floor="0" ceiling="100" step="50" precision="2" ng-model="config.fontsize"></slider>
+	</div>
+	<div class='itembar'>
+		<div class='caption'>On Free</div>				
+		<p class='startvalue'>Off</p>
+		<p class='middlevalue'>Buzz</p>
+		<p class='endvalue'>Tone</p>	
+		<slider floor="0" ceiling="100" step="50" precision="2" ng-model="config.fontsize"></slider>
+	</div>
+	<div class='itembar'>
+		<div class='caption'>On Paid</div>						
+		<slider floor="0" ceiling="100" step="50" precision="2" ng-model="config.fontsize"></slider>
+	</div>
+	<div class='itembar'>
+		<div class='caption'>On Tip</div>						
+		<slider floor="0" ceiling="100" step="50" precision="2" ng-model="config.fontsize"></slider>
+	</div>
+</div>
+<!--div class="modal-footer">
+</div-->
+
+<style>
+	.modal {
+		width:65% !important;
+		left:10% !important;
+	}	
+
+	.modal-body {
+		max-height: 487px;
+	}
+
+	.modal-header, .modal-footer {
+		display: none;
+	}
+
+	slider {
+		margin: 25x 5px 25px 5px;
+		width: 78%;
+	}
+
+	.caption {
+		width: 20%;
+		float: left;
+		margin-top: 20px;
+	}
+
+	.itembar{
+		width: 700px;
+		margin-left: 8%;
+	}
+
+	.startvalue {
+		position: absolute;
+		margin-left: 16%;
+		margin-top: 0px;
+	}
+
+	.middlevalue{
+		position: absolute;
+		margin-left: 45%;
+		margin-top: 0px;
+	}
+
+	.endvalue {
+		position: absolute;
+		margin-left: 76%;
+		margin-top: 0px;
+	}
+</style>

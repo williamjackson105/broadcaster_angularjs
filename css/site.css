@@ -1,0 +1,94 @@
+body {
+	background-image: url('../images/back.png');	
+	background-size: cover;
+}
+
+.header {
+	text-align: center;
+	border: 1px solid black;
+	height:40px;
+	padding:4px;
+}
+
+.logo , .earning , .buttons {
+	float:left;
+	width:30%;
+}
+
+.main {
+	float: left;
+	height: 650px;	
+	margin-right:1%;
+	margin-top:10px;
+}
+
+.leftside {
+	width:35%;
+	text-align:center;
+}
+
+.center {
+	width:50%;
+	border: 1px solid black;
+}
+
+.allpic {
+	width:10%;	
+	border: 1px solid black;
+	overflow:auto;
+}
+
+.main-title {
+	border-bottom:1px solid black;
+	height:30px;		
+	padding:0 6px 0 6px;
+}
+
+#video {
+	height: 250px;
+	border: 1px solid black;
+}
+
+#privmess {
+	height:350px;
+	border: 1px solid black;
+}
+
+#privmess .mess-view {
+	height:270px;
+	border-bottom: 1px solid black;
+	overflow:auto;
+}
+
+#privmess .mess-input {
+	height:50px;
+}
+
+#privmess .mess-input input {
+	height: 33px;
+	width: 97%;
+	margin: 4px;
+}
+
+#freemess .mess-view {
+	height:550px;
+	border-bottom: 1px solid black;
+	overflow:auto;
+}
+
+#freemess .mess-input {
+	height:50px;
+}
+
+#freemess .mess-input input {
+	height: 33px;
+	width: 97%;
+	margin: 4px;
+}
+
+.pic {
+	height: 76px;
+	border: 1px solid black;
+	margin: 11%;
+	font-size:10px;
+}

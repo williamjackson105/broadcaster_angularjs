@@ -1,0 +1,55 @@
+<!--
+Purpose:
+  When clicking "Tips" button, it displays this html in modal dialog.
+
+-->
+
+<!--div class="modal-header">	
+</div-->
+<div class="modal-body">
+	<div class='tips-box'>
+		<h1>Do</h1>
+
+		<li ng-repeat="todo in todos">{{todo}}</li>
+	</div>
+	<div class='tips-box'>
+		<h1>Don't</h1>
+		<li ng-repeat="notodo in notodos">{{notodo}}</li>
+	</div>
+</div>
+<!--div class="modal-footer">
+</div-->
+
+<style>
+	.modal {
+		width:70% !important;
+		left:10% !important;
+	}	
+	.tips-box {
+		width:45%;
+		float:left;
+		text-align:center;
+		background-color: #f8e878;
+		padding-bottom: 22px;
+		margin-left: 31px;
+	}	
+
+	.tips-box li {
+		float: left;
+		clear: both;
+		margin-left: 10%;
+	}
+
+	.modal-header, .modal-footer {
+		display: none;
+	}
+
+	.modal-content {
+		background-color: #3a3a3a;
+		border: 1px solid white;
+	}
+
+	.modal-body{
+		padding: 15px 0px 15px 0px;
+	}
+</style>

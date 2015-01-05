@@ -1,0 +1,33 @@
+<!--
+Purpose:
+  This is region of Private Messages in the main page.
+
+
+-->
+
+<div ng-controller="DirectChatCtrl">
+	<div class='main-title'>		
+		Private messages
+	</div>
+	<div id='directmess' class='mess-view'>
+		<li ng-repeat="message in directmessages">{{message}}</li>		
+	</div>
+	<div class='mess-input'>
+		<form ng-submit="sendDirectMessage()">
+				<input type="text" ng-model="directText" placeholder="Type your message here" />
+				<input type="submit" value="Send" hidden/>
+		</form>
+	</div>
+</div>
+
+<style>
+	#directmess li 
+	{
+		list-style: none;
+		border: 1px solid black;
+		margin: 7px;
+		padding: 4px;
+		text-align: left;
+	}
+
+</style>
